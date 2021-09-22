@@ -1,9 +1,9 @@
 pipeline {
-  agent { label 'slave3' } 
+  agent { label 'slave1' } 
     stages {
         stage('Directory') {
             steps {
-                // sh 'cd /home/slave3/workspace/Pipelinemaven/java-mvn-hello-world-web-app'
+                // sh 'cd /home/slave1/workspace/Pipelinemaven/java-mvn-hello-world-web-app'
               sh 'cd ${WORKSPACE}'
             }
         }
