@@ -4,7 +4,7 @@ pipeline {
    
 stage ('build'){
       steps{
-        sh 'sudo docker build -S mstage:latest .'
+        sh 'sudo docker build -t mstage:latest .'
       }
     }
    
