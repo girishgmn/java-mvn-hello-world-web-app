@@ -21,7 +21,7 @@ stage ('build'){
       steps{
         sh 'docker login -u girishgmn -p Ggmnvnj@11aug'
         sh 'docker pull girishgmn/mvnnow:5.0'
-        sh 'docker run -d -p 9000:8080 mvn1:latest'
+        sh 'docker run -d -p 9000:8080 girishgmn/mvnnow:5.0'
       }
     }  
   }
