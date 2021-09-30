@@ -17,6 +17,7 @@ stage ('build'){
       }
     }
   stage ('deploy'){
+     agent {label 'slave2'}
       steps{
         sh 'docker run -d -p 9000:8080 mvn1:latest'
       }
