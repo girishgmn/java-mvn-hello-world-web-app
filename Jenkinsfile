@@ -19,6 +19,8 @@ stage ('build'){
   stage ('deploy'){
      agent {label 'slave2'}
       steps{
+        sh 'docker login -u girishgmn -p Ggmnvnj@11aug'
+        sh 'docker pull girishgmn/mvnnow:5.0'
         sh 'docker run -d -p 9000:8080 mvn1:latest'
       }
     }  
