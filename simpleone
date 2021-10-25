@@ -1,15 +1,15 @@
 pipeline{
   agent{label 'slave2'}
   stages{
-        stage('Stage 1'){
+        stage('Stageone'){
           steps{
           echo 'hi welcome to devops'
       }
-         stage('Stage 2'){
+         stage('Stage2'){
            steps{
            echo 'hi good morning'
         }
-          stage('Stage 3'){
+          stage('Stage3'){
            steps{
              echo 'done with devops'
           }
